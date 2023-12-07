@@ -18,3 +18,7 @@ RUN chmod +x /crons/*
 
 # Copy nginx overrides.
 COPY docker/openshift/custom.locations /etc/nginx/conf.d/custom.locations
+
+# Change stop signal to SIGQUIT 
+# to make processes exit gracefully
+STOPSIGNAL SIGQUIT
