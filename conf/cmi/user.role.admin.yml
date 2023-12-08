@@ -10,7 +10,6 @@ dependencies:
     - media.type.helfi_chart
     - media.type.image
     - media.type.remote_video
-    - media.type.soundcloud
     - node.type.announcement
     - node.type.landing_page
     - node.type.page
@@ -22,6 +21,7 @@ dependencies:
     - content_lock
     - content_translation
     - editoria11y
+    - entity_usage
     - eu_cookie_compliance
     - file
     - filter
@@ -36,6 +36,7 @@ dependencies:
     - paragraphs_library
     - path
     - pathauto
+    - publication_date
     - redirect
     - role_delegation
     - scheduler
@@ -56,6 +57,7 @@ permissions:
   - 'access administration pages'
   - 'access content'
   - 'access content overview'
+  - 'access entity usage statistics'
   - 'access files overview'
   - 'access media overview'
   - 'access remote entities overview'
@@ -98,7 +100,6 @@ permissions:
   - 'create paragraph library item'
   - 'create remote entities'
   - 'create remote_video media'
-  - 'create soundcloud media'
   - 'create terms in keywords'
   - 'create terms in neighbourhoods'
   - 'create url aliases'
@@ -113,19 +114,18 @@ permissions:
   - 'delete any media'
   - 'delete any page content'
   - 'delete any remote_video media'
-  - 'delete any soundcloud media'
   - 'delete content translations'
   - 'delete landing_page revisions'
   - 'delete media'
   - 'delete own announcement content'
   - 'delete own file media'
+  - 'delete own files'
   - 'delete own hel_map media'
   - 'delete own helfi_chart media'
   - 'delete own image media'
   - 'delete own landing_page content'
   - 'delete own page content'
   - 'delete own remote_video media'
-  - 'delete own soundcloud media'
   - 'delete page revisions'
   - 'delete remote entities'
   - 'delete terms in keywords'
@@ -138,7 +138,6 @@ permissions:
   - 'edit any landing_page content'
   - 'edit any page content'
   - 'edit any remote_video media'
-  - 'edit any soundcloud media'
   - 'edit own announcement content'
   - 'edit own file media'
   - 'edit own hel_map media'
@@ -147,11 +146,11 @@ permissions:
   - 'edit own landing_page content'
   - 'edit own page content'
   - 'edit own remote_video media'
-  - 'edit own soundcloud media'
   - 'edit paragraph library item'
   - 'edit remote entities'
   - 'edit terms in keywords'
   - 'edit terms in neighbourhoods'
+  - 'mark as hidden in editoria11y'
   - 'revert all revisions'
   - 'revert all tpr_service revisions'
   - 'revert all tpr_unit revisions'
@@ -175,7 +174,6 @@ permissions:
   - 'translate neighbourhoods taxonomy_term'
   - 'translate page node'
   - 'translate remote_video media'
-  - 'translate soundcloud media'
   - 'translate tpr_errand_service'
   - 'translate tpr_service'
   - 'translate tpr_service_channel'
@@ -187,8 +185,6 @@ permissions:
   - 'update media'
   - 'update own tpr_service'
   - 'update own tpr_unit'
-  - 'update tpr_service'
-  - 'update tpr_unit'
   - 'use menu link attributes'
   - 'use siteimprove'
   - 'use siteimprove prepublish'

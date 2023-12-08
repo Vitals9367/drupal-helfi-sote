@@ -6,7 +6,12 @@ endif
 DRUPAL_POST_INSTALL_TARGETS := drush-deploy drush-locale-update drush-uli
 
 OC_LOGIN_TOKEN ?= $(shell bash -c 'read -s -p "You must obtain an API token by visiting https://oauth-openshift.apps.arodevtest.hel.fi/oauth/token/request (Token):" token; echo $$token')
+
+SYNC_TARGETS := drush-sync-db
+
+ifneq ($(DUMP_SQL_EXISTS),yes)
 SYNC_TARGETS := oc-login oc-sync
+endif
 
 PHONY += oc-login
 oc-login:
@@ -25,7 +30,7 @@ PHONY += helfi-drush-enable-modules
 helfi-drush-enable-modules: ## Enable modules and base configurations.
 	$(call step,Install base configurations...)
 	$(call drush,cr)
-	$(call drush,en -y helfi_platform_config helfi_base_config)
+	$(call drush,en -y helfi_platform_config helfi_platform_config_base)
 
 PHONY += drush-locale-update
 drush-locale-update: ## Update translations.

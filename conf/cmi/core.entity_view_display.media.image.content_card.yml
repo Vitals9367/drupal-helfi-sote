@@ -10,8 +10,6 @@ dependencies:
     - responsive_image.styles.content_cards
   module:
     - responsive_image
-_core:
-  default_config_hash: lAqCvC4YNxa7kgof3IJX8g0PcLW0yVTizkXduvDX-lU
 id: media.image.content_card
 targetEntityType: media
 bundle: image
@@ -23,6 +21,8 @@ content:
     settings:
       responsive_image_style: content_cards
       image_link: ''
+      image_loading:
+        attribute: eager
     third_party_settings: {  }
     weight: 0
     region: content
@@ -31,5 +31,6 @@ hidden:
   field_photographer: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

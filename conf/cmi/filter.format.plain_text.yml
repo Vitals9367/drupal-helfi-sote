@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - helfi_api_base
-_core:
-  default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
 name: 'Plain text'
 format: plain_text
 weight: 10
@@ -22,7 +20,7 @@ filters:
     status: true
     weight: 0
     settings:
-      filter_url_length: 72
+      filter_url_length: 120
   filter_autop:
     id: filter_autop
     provider: filter

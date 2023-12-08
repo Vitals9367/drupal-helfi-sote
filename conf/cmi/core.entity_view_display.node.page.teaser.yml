@@ -16,7 +16,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: Ov8pAiMS6A9VCIfdlfZstoyfMSAAMK7fwW8HXDLkdQA
+  default_config_hash: cNX3bx6qnz2khBmsfeNeR-4bUFPswL2Eb0w6tRAUzvc
 id: node.page.teaser
 targetEntityType: node
 bundle: page
@@ -41,4 +41,6 @@ hidden:
   field_sidebar_content: true
   langcode: true
   links: true
+  published_at: true
+  search_api_excerpt: true
   toc_enabled: true

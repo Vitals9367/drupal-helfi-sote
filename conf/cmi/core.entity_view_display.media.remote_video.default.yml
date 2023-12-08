@@ -7,8 +7,6 @@ dependencies:
     - media.type.remote_video
   module:
     - media
-_core:
-  default_config_hash: bAXIHAvYIrUpUDe9w9dDlA3cpdnn84JUL30GZ7yjGMM
 id: media.remote_video.default
 targetEntityType: media
 bundle: remote_video
@@ -20,6 +18,8 @@ content:
     settings:
       max_width: 1264
       max_height: 714
+      loading:
+        attribute: eager
     third_party_settings: {  }
     weight: 0
     region: content
@@ -27,5 +27,6 @@ hidden:
   created: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

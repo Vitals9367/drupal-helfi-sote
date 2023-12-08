@@ -5,8 +5,6 @@ dependencies:
   module:
     - node
     - user
-_core:
-  default_config_hash: 9-2iisPYYsVrKKdCr6KjJUxQpLrdV8WzmG82vdEbnCk
 id: content
 label: Content
 module: node
@@ -250,9 +248,18 @@ display:
           hide_alter_empty: true
           type: timestamp
           settings:
-            date_format: short
+            date_format: long
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
         operations:
           id: operations
           table: node
@@ -464,11 +471,11 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items:
-              1:
+              -
                 title: Published
                 operator: '='
                 value: '1'
-              2:
+              -
                 title: Unpublished
                 operator: '='
                 value: '0'
@@ -535,7 +542,7 @@ display:
       filter_groups:
         operator: AND
         groups:
-          1: AND
+          - AND
       style:
         type: table
         options:
@@ -642,8 +649,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
+      display_extenders: {  }
       path: admin/content/node
       menu:
         type: 'default tab'

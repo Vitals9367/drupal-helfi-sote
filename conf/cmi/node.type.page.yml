@@ -24,7 +24,7 @@ third_party_settings:
     unpublish_required: false
     unpublish_revision: false
 _core:
-  default_config_hash: _BhpJzkKyfByF3bLZ56eV_kN67Rm6pXG5IJ9ao-mJP4
+  default_config_hash: A1XVcWETFW22MWUdDTxkOE331kBoYUWPQILECfHoBfk
 name: 'Standard page'
 type: page
 description: 'Content type for standard web content.'

@@ -14,7 +14,7 @@ dependencies:
     - metatag
     - text
 _core:
-  default_config_hash: xI-QgKUvsjLc0SRc8bpDE336uJXT5rVP6K8TirZUzw8
+  default_config_hash: bipB-zcUXW3e12wtjBTJ42I9vKovNlR8ZW8o-73Reas
 id: tpr_service.tpr_service.default
 targetEntityType: tpr_service
 bundle: tpr_service
@@ -111,6 +111,8 @@ content:
 hidden:
   created: true
   has_unit: true
+  hide_service_points: true
   langcode: true
   name_synonyms: true
+  search_api_excerpt: true
   service_id: true

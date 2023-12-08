@@ -74,33 +74,34 @@ display:
           batch: true
           batch_size: 50
           form_step: true
+          ajax_loader: false
           buttons: false
           action_title: Action
           clear_on_exposed: true
           force_selection_info: false
           selected_actions:
-            0:
+            -
               action_id: 'entity:break_lock:tpr_unit'
               preconfiguration:
                 add_confirmation: false
                 label_override: 'Break lock'
-            1:
+            -
               action_id: 'remote_entity:migration_update:tpr_unit'
               preconfiguration:
                 add_confirmation: false
                 label_override: Update
-            2:
+            -
               action_id: views_bulk_edit
               preconfiguration:
                 add_confirmation: false
                 label_override: 'Modify values'
                 get_bundles_from_results: true
-            4:
+            -
               action_id: 'entity:unpublish_action:tpr_unit'
               preconfiguration:
                 add_confirmation: false
                 label_override: 'Unpublish unit'
-            5:
+            -
               action_id: 'entity:publish_action:tpr_unit'
               preconfiguration:
                 add_confirmation: false
@@ -425,6 +426,15 @@ display:
             date_format: long
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
